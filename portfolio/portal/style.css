@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #2F0C34, #661D35, #FF846B, #661D35, #2F0C34);
+}
+
+div#card{
+    margin: 70px 130px;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #00000069;;
+    background-image: linear-gradient(#2F0C34, #661D35, #FF846B);
+    position: relative;
+}
+
+div div{
+    margin: 50px 0;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+div div ul{
+    display: flex;
+    justify-content: center;
+}
+
+div div ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+div div ul li a{
+    padding: 5px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: bold;
+    background-image: linear-gradient(transparent 0%, 90%, #ffffff 90%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+div div ul li a:hover, .ativado{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+@font-face{
+    font-family: Alamak;
+    src: url(/portal/imagens/Alamak.ttf);
+}
+
+div div #logo{
+    font-family: Alamak;
+    align-items: center;
+    margin-top: 100px;
+    color: transparent;
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-image: linear-gradient(45deg, #962B2B, #FF3800, #FFBD00, #FF3800, #962B2B);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+div div #logo:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+div #navegation p{
+    padding: 10px 65px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+
+/* BOTÕES */
+
+div #button1{
+    text-decoration: none;
+    padding: 5px 40px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+div #button2{
+    text-decoration: none;
+    padding: 5px 40px;
+    color: #ffffff;
+}
+
+div #button1 span, div #button2 span{
+    font-size: 18px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+div #button1:hover{
+    transition: 500ms;
+    font-weight: bold;
+    border: 1px solid #ffffff5b;
+}
+
+div #button2:hover{
+    transition: 500ms;
+    font-weight: bold;
+}
+
+/* IMAGENS */
+
+div#imagens{
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: auto;
+    background-image: url(/portal/imagens/fundo.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: -600px;
+    background-size: 350%;
+}
+
+div img#pedras{
+    position: absolute;
+    z-index: 10;
+    transform: translateY(0);
+    animation: float 5s ease-in-out infinite;
+}
+
+div img#brilho{
+    position: absolute;
+    z-index: 9;
+    animation: brilho 3s ease-in-out infinite;
+    mix-blend-mode: screen;
+}
+
+div img#maga{
+    position: absolute;
+    height: auto;
+    width: 45%;
+    margin-bottom: 5%;
+    left: 680px;
+    z-index: 8;
+}
+
+div img#portal{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes brilho{
+    0%{
+        opacity: 0;
+        animation-delay: 0.2s;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

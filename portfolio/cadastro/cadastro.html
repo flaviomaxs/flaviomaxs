@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastramento</title>
+    <link rel="stylesheet" href="/site/cadastro/style-cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tittle"><h1>Criar conta</h1></div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span id="span-nome" class="details">Nome Completo:</span>
+                    <input id="nome" type="text" placeholder="Nome completo" required>
+                    <!--<span class="error"></span>-->
+                </div>
+                <div class="input-box">
+                    <span id="span-usuario" class="details">Nome do Usuário:</span>
+                    <input id="usuario" type="text" placeholder="Nome de usuário" required>
+                    <!--<span class="error"></span>-->
+                </div>
+                <div class="input-box">
+                    <span id="span-email" class="details">Email:</span>
+                    <input id="email" type="email" placeholder="exemplo@email.com" required>
+                    <!--<span class="error"></span>-->
+                </div>
+                <div class="input-box">
+                    <span id="span-telefone" class="details">Número de telefone:</span>
+                    <input id="telefone" type="tel" placeholder="(xx) x xxxx-xxxx" required>
+                    <!--<span class="error"></span>-->
+                </div>
+                <div class="input-box">
+                    <span id="span-senha" class="details">Senha:</span>
+                    <input id="senha" type="password" placeholder="Senha" required>
+                    <!--<span class="error"></span>-->
+                </div>
+                <div class="input-box">
+                    <span id="span-confirmar" class="details">Confirmar Senha:</span>
+                    <input id="confirmar-senha" type="password" placeholder="Confirme sua senha" required>
+                    <!--<span class="error"></span>-->
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1" checked>
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-tittle">Gênero:</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot-gender-1"></span>
+                        <span class="gender">Homem</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot-gender-2"></span>
+                        <span class="gender">Mulher</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot-gender-3"></span>
+                        <span class="gender">Prefiro não dizer</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit"id="criar">Criar conta</button>
+                <!--onclick="cadastrar()"-->
+            </div>
+        </form>
+    </div>
+    <script src="/site/cadastro/scriptcadastro.js"></script>
+</body>
+</html>

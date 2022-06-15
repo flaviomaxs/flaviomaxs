@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --cor-fundo: #F4EBD0;
+    --cor-card: #122620;
+    --cor-texto: #B68D40;
+    --cor-secundaria: #D6AD60;
+    --cor-erro: #cf6679; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    background-color: var(--cor-card);
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    color: var(--cor-secundaria);
+}
+
+.container .tittle{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+}
+
+.container .tittle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, var(--cor-fundo), var(--cor-texto));
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.input-box input::placeholder{
+    color: var(--cor-card);
+    opacity: 0.6;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--cor-secundaria);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: var(--cor-texto);
+}
+
+form .gender-details .gender-tittle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot-gender-1,
+.gender-details .category .dot-gender-2,
+.gender-details .category .dot-gender-3{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#dot-1:checked ~ .category label .dot-gender-1,
+#dot-2:checked ~ .category label .dot-gender-2,
+#dot-3:checked ~ .category label .dot-gender-3{
+    border-color: var(--cor-fundo);
+    background-color: var(--cor-card);
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    width: 45px 0;
+}
+
+form .button button:hover{
+    background-color: var(--cor-secundaria);
+}
+
+form .button button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 15px;
+    color: var(--cor-card);
+    background-color: var(--cor-texto);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+/*
+span.error{
+    display: flex;
+    padding: 0;
+    background-color: #cf6679;
+}
+
+span.error.active{
+    border: 1px solid #cf6679;
+    padding: 0.4em;
+}
+*/
+
+@media only screen and (max-width: 584px){
+    .container{
+        max-width: 100%;
+        padding: 20px;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+        font-size: 11.1pt;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::webkit-scrollbar{
+        width: 0;
+    }
+    #dot-1 ~ .category label .dot-gender-1{
+        margin: 3px;
+    }
+    #dot-2 ~ .category label .dot-gender-2{
+        margin: 3px;
+    }
+    #dot-3 ~ .category label .dot-gender-3{
+        margin: 3px;
+    }
+    span{
+        margin-right: 5px;
+    }
+}
