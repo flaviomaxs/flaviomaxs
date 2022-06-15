@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body{
@@ -762,7 +762,7 @@ img[src]{
 }
 
 .layer1{
-    background-image: url(/portfolio/imagens/onda.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/imagens/onda.svg);
 }
 
 /* HABILIDADES */
@@ -774,7 +774,7 @@ img[src]{
 }
 
 .layer2{
-    background-image: url(/portfolio/imagens/onda1.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/imagens/onda1.svg);
 }
 
 /* PORTFÓLIO */
@@ -786,7 +786,7 @@ img[src]{
 }
 
 .layer3{
-    background-image: url(/portfolio/imagens/onda2.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/imagens/onda2.svg);
 }
 
 /* EXPERIÊNCIA */
@@ -798,7 +798,7 @@ img[src]{
 }
 
 .layer4{
-    background-image: url(/portfolio/imagens/onda3.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/imagens/onda3.svg);
 }
 
 /* AVALIAÇÕES */
@@ -810,7 +810,7 @@ img[src]{
 }
 
 .layer5{
-    background-image: url(/portfolio/imagens/onda4.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/imagens/onda4.svg);
 }
 
 /* LAYOUT RESPONSIVO */
