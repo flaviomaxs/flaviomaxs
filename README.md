@@ -1,5 +1,6 @@
 <h1 align="center">Olá 👋, eu sou Flávio Max</h1>
-<h3 align="center">Um desenvolvedor júnior web front-end de Salvador, BA</h3>
+<h3 align="center">Um desenvolvedor júnior web front-end de Salvador, BA.</h3>
+<h3 align="center">Gosto de trabalhos ligados à layout e design de páginas online, sendo mais aplicado à criação de sites.</h3>
 <img align="right" alt="Coding" src="https://user-images.githubusercontent.com/107218993/173683679-f50853f5-daff-4330-9d7f-04a7e5568efd.gif">
 
 
