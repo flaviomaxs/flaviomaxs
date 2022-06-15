@@ -3,7 +3,7 @@
 <img align="right" alt="Coding" src="https://user-images.githubusercontent.com/107218993/173683679-f50853f5-daff-4330-9d7f-04a7e5568efd.gif">
 
 
-- 🔭 Último projeto concluído [Portfólio](https://github.com/flaviomaxs/flaviomaxs/tree/main/portfolio)
+- 🔭 Último projeto concluído [Portfólio](https://flaviomaxs.github.io/flaviomaxs/portfolio/)
 
 - 🌱 Atualmente estou aprendendo **HTML, CSS & JavaScript**
 
