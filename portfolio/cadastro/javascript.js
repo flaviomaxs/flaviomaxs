@@ -37,13 +37,12 @@ usuario.addEventListener("keyup", ()=>{
 })
 
 
-
+//validar email
 const validateEmail = (email) => {
     const re = /\S+@\S+\.\S+/;
     return re.test(email);
   };
 
-//validar email
 email.addEventListener("keyup", ()=>{
     if(email.value.length <= 4){
         span_email.setAttribute("style", "color:red")
@@ -54,8 +53,3 @@ email.addEventListener("keyup", ()=>{
         email.setAttribute("style", "border-color:green")
     }
 })
-
-
-function cadastrar(){
-
-}
