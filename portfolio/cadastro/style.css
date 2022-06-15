@@ -157,18 +157,7 @@ form .button button{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
 }
 
-/*
-span.error{
-    display: flex;
-    padding: 0;
-    background-color: #cf6679;
-}
-
-span.error.active{
-    border: 1px solid #cf6679;
-    padding: 0.4em;
-}
-*/
+/* LAYOUT RESPONSIVO */
 
 @media only screen and (max-width: 584px){
     .container{
