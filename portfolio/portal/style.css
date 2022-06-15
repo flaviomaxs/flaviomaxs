@@ -65,7 +65,7 @@ div div ul li a:hover, .ativado{
 
 @font-face{
     font-family: Alamak;
-    src: url(/portal/imagens/Alamak.ttf);
+    src: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/portal/imagens/Alamak.ttf);
 }
 
 div div #logo{
@@ -138,7 +138,7 @@ div#imagens{
     justify-content: center;
     align-items: center;
     z-index: auto;
-    background-image: url(/portal/imagens/fundo.svg);
+    background-image: url(https://flaviomaxs.github.io/flaviomaxs/portfolio/portal/imagens/fundo.svg);
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: -600px;
