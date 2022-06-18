@@ -24,5 +24,5 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 <a href="https://flaviomaxs.github.io/flaviomaxs/portfolio/">
 <img width="500em" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&theme=dark&inclube_all_commits=true&count_private=true"/>
 <img width="500em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flaviomaxs&layout=compact&langs_count=16&theme=dark"/>
-<img width="500em" src="https://github-readme-streak-stats.herokuapp.com/?user=flaviomaxs&layout=compact&langs_count=16&theme=dark"" alt="flaviomaxs" />
+<img width="500em" src="https://github-readme-streak-stats.herokuapp.com/?user=flaviomaxs&layout=compact&langs_count=16&theme=dark" alt="flaviomaxs" />
 </div>
