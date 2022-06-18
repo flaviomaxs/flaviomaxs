@@ -4,6 +4,8 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 <img align="right" alt="Coding" src="https://user-images.githubusercontent.com/107218993/174450206-c8442c8b-ce0c-4ec3-9db2-a91084db8e30.png">
 
 
+
+
 - 🔭 Último projeto concluído [Portfólio](https://flaviomaxs.github.io/flaviomaxs/portfolio/)
 
 - 🌱 Atualmente estou aprendendo **HTML, CSS & JavaScript**
@@ -21,6 +23,8 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> </p>
 
-<p>&nbsp;<img align="center" width="400" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&locale=en" alt="flaviomaxs" /></p>
-
-<p><img align="center" width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=flaviomaxs&" alt="flaviomaxs" /></p>
+<div>
+<a href="https://beacons.ai/flaviomaxs">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&theme=dark&inclube_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flaviomaxs&layout=compact&langs_count=16&theme=dark"/>
+</div>
