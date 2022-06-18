@@ -23,6 +23,6 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 
 <div align="center">
 <a href="https://beacons.ai/flaviomaxs">
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&theme=dark&inclube_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&theme=dark&inclube_all_commits=true&count_private=true"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flaviomaxs&layout=compact&langs_count=16&theme=dark"/>
 </div>
