@@ -4,8 +4,6 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 <img align="right" alt="Coding" src="https://user-images.githubusercontent.com/107218993/174450206-c8442c8b-ce0c-4ec3-9db2-a91084db8e30.png">
 
 
-
-
 - 🔭 Último projeto concluído [Portfólio](https://flaviomaxs.github.io/flaviomaxs/portfolio/)
 
 - 🌱 Atualmente estou aprendendo **HTML, CSS & JavaScript**
@@ -26,5 +24,5 @@ Gosto de trabalhos ligados à layout e design de páginas online, sendo mais apl
 <div>
 <a href="https://beacons.ai/flaviomaxs">
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=flaviomaxs&show_icons=true&theme=dark&inclube_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flaviomaxs&layout=compact&langs_count=16&theme=dark"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=flaviomaxs&layout=compact&langs_count=16&theme=black"/>
 </div>
