@@ -4,6 +4,18 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0)
 })
 
+/* BOTÃO DOWNLOAD CURRÍCULO */
+let cv_button = document.querySelector(".cv")
+cv_button.addEventListener("click", () =>{
+	cv_button.classList.add("cv-ativo")
+
+	setTimeout(() =>{
+		cv_button.classList.remove("cv-ativo") //REMOVER class="cv-ativo" DEPOIS DE 6s
+		document.querySelector("svg").classList.replace("bi-file-earmark-arrow-down-fill", "bi-check-circle-fill")
+		document.querySelector(".cv-texto").innerHTML = "Download Completo"
+	},6000) //1s = 1000ms
+})
+
 /* IMAGENS */
 function ativaNoScroll() {
 	document.querySelectorAll('img').forEach((img, index) => {
