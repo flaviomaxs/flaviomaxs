@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -56,7 +56,7 @@ section{
     font-weight: 500;
     color: #ffffff;
 }
-
+/* REDE SOCIAL */
 .social{
     display: flex;
     align-items: center;
@@ -78,8 +78,7 @@ section{
 .principal.social{
     background-color: white;
 }
-
-
+/* NAV */
 header{
     position: fixed;
     top: 0;
@@ -105,6 +104,78 @@ header .logo{
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+}
+/* BOTÃO DONWLOAD CURRÍCULO */
+.cv{ 
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    color: #ffffff;
+    width: 250px;
+    height: 40px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 55px;
+    background-color: #2196f3;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cv:hover{
+    background-color: #546eff;
+    transition: 0.5s all linear;
+}
+
+.cv:hover::before{
+    background-color: #2196f3;
+}
+
+ .cv.cv-ativo{
+    height: 10px;
+    width: 250px;
+}
+
+.cv::before{
+    position: absolute;
+    content: "";
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 55px;
+    background-color: #546eff;
+}
+
+.cv.cv-ativo::before{
+    animation: left 6s ease-in-out forwards;
+}
+@keyframes left{
+    100%{
+        left: 0%;
+    }
+}
+
+.cv.cv-ativo .cv-button{
+    transform: translateX(300px);
+}
+
+.cv-button{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+.cv-texto{
+    margin-left: 8px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.cv-texto{
+    margin-left: 8px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 header ul{
@@ -136,7 +207,6 @@ header ul li a:hover, .ativado{
     background-size: 100% 100%;
     background-position-x: left;
 }
-
 header.sticky .logo,
 header.sticky ul li a{
     color: #000000;
@@ -559,7 +629,7 @@ img[src]{
     column-gap: 0.5em;
 }
 
-.bi-check-circle-fill{ /* CLASSE DO CÍRCULO CHECKED */
+.circulo-check{ /* CLASSE DO CÍRCULO CHECKED */
     color: #2196f3;
 }
 
@@ -846,7 +916,6 @@ img[src]{
 
     .icone-menu{
         color: #000;
-       
         display: flex;
     }
     .menu{
