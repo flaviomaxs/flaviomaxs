@@ -1,9 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 from telegram.ext import Updater, CommandHandler
+import telegram
 
 # Número máximo de ofertas a serem enviadas por vez
 MAX_DEALS = 3
+
+# URL da página de ofertas da Amazon
+AMAZON_URL = "https://www.amazon.com.br/gp/goldbox/"
 
 # Função para o comando /start
 def start(update, context):
@@ -18,31 +22,30 @@ def help(update, context):
 
 # Função para coletar promoções da Amazon e enviar para um canal ou grupo
 def get_amazon_deals(update, context):
-    amazon_url = "https://www.amazon.com.br/gp/goldbox/"
-
     try:
-        response = requests.get(amazon_url)
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.content, 'html.parser')
-            deals = soup.find_all('a', class_='a-link-normal dealTitle')
+        response = requests.get(AMAZON_URL)
+        response.raise_for_status()  # Verifica se houve erro na requisição HTTP
 
-            # Limita o número de ofertas a serem enviadas
-            deals_to_send = deals[:MAX_DEALS]
+        soup = BeautifulSoup(response.content, 'html.parser')
+        deals = soup.find_all('a', class_='a-link-normal dealTitle')
 
-            for deal in deals_to_send:
-                deal_title = deal.text.strip()
-                deal_href = deal.get('href')
+        # Limita o número de ofertas a serem enviadas
+        deals_to_send = deals[:MAX_DEALS]
 
-                if deal_href:
-                    deal_link = f"https://www.amazon.com.br{deal_href}"
-                    affiliate_link = generate_affiliate_link(deal_link)
-                    send_deal_message(update, context, deal_title, affiliate_link)
-                else:
-                    update.message.reply_text("Não foi possível obter o link da promoção.")
-        else:
-            update.message.reply_text("Desculpe, não foi possível acessar as promoções da Amazon no momento.")
-    except Exception as e:
+        for deal in deals_to_send:
+            deal_title = deal.text.strip()
+            deal_href = deal.get('href')
+
+            if deal_href:
+                deal_link = f"https://www.amazon.com.br{deal_href}"
+                affiliate_link = generate_affiliate_link(deal_link)
+                send_deal_message(update, context, deal_title, affiliate_link)
+            else:
+                update.message.reply_text("Não foi possível obter o link da promoção.")
+    except requests.RequestException as e:
         update.message.reply_text(f"Erro ao buscar ofertas: {e}")
+    except Exception as e:
+        update.message.reply_text(f"Erro inesperado: {e}")
 
 # Função para enviar mensagem com a oferta
 def send_deal_message(update, context, deal_title, affiliate_link):
